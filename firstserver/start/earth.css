@@ -1,0 +1,65 @@
+body {
+    background-color: PaleVioletRed   ;
+}
+
+h1 {
+    color: PaleVioletRed   ;
+    text-align: center;
+}
+
+a.fresh:link {
+  color: PaleVioletRed  ;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.fresh:visited {
+  color: PaleVioletRed  ;
+  font-size: 20px;
+  font-family:sans-serif;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.fresh:hover, a.fresh:active {
+  background-color: Teal  ;
+  font-size: 150%;
+}
+
+div.option1 {
+    width: 120px;
+    height: 120px;
+    background-color: PaleVioletRed   ;
+    border: 1px solid PaleVioletRed   ;
+    position: absolute;
+    bottom:180px;
+    right:380px;
+}
+
+div.option1:hover {
+    width: 120px;
+    height: 120px;
+    background-color: SpringGreen    ;
+    border: 1px solid PaleVioletRed   ;
+}
+
+div.option2 {
+    width: 120px;
+    height: 120px;
+    background-color: PaleVioletRed   ;
+    border: 1px solid PaleVioletRed   ;
+    position: absolute;
+    left:290px;
+    top:140px;
+}
+
+div.option2:hover {
+    width: 120px;
+    height: 120px;
+    border: 1px solid PaleVioletRed   ;
+    background-color: SaddleBrown  ;
+}

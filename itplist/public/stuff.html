@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Stuff posting</title>
+  </head>
+  <body>
+    <form method=POST action="/stuffsubmission">
+       <!-- <fieldset> -->
+          <h2>Stuff</h2>
+          <div class = "box">
+          <p>What is it?<input type="text" name="title"><br>
+          Description: <textarea name="stuffdescription"></textarea><br>
+          Quality:
+          <select tabindex="1" name="stuff_quality" id="stuff_quality">
+          <option value="">-</option>
+
+              <option value="1">Broken</option>
+              <option value="2">Mild wear</option>
+              <option value="3">Good</option>
+              <option value="4">Like new</option>
+
+          </select></p>
+          <div class="contactchecks">
+            <input type="checkbox" name="barter_ok" value="1">Barter
+            <input type="checkbox" name="sell_ok" value="1">Sell
+          </div>
+          <br>
+        </div>
+        <br>
+       <!-- </fieldset> -->
+       <!-- <fieldset> -->
+          <h2>Contact</h2>
+        <div class="box">
+          <p>Name: <input type="text" name="name"><br>
+          Email: <input type="text" name="email"><br>
+          Phone: <input type="text" name="phone">
+          </p>
+          <div class="contactchecks">
+            <input type="checkbox" name="text_ok" value="1">Text Me
+            <input type="checkbox" name="call_ok" value="1">Call me
+            <input type="checkbox" name="email_ok" value="1">Email me
+          </div>
+          <br>
+        </div>
+
+      <!-- </fieldset> -->
+      <br>
+    <input class="button" type="submit" name="submit" value="submit">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+body {
+    background-color: DarkTurquoise;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+a.fresh:link {
+  color: DarkTurquoise;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.fresh:visited {
+  color: DarkTurquoise;
+  font-size: 20px;
+  font-family:sans-serif;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.fresh:hover, a.fresh:active {
+  background-color: Azure;
+  font-size: 150%;
+}
+
+div.option1 {
+    width: 150px;
+    height: 150px;
+    background-color: DarkTurquoise;
+    border: 1px solid DarkTurquoise;
+    position: absolute;
+    left:550px;
+    top:350px;
+}
+
+div.option1:hover {
+    width: 150px;
+    height: 150px;
+    background-color: Indigo  ;
+    border: 1px solid DarkTurquoise;
+}
+
+div.option2 {
+    width: 150px;
+    height: 150px;
+    background-color: DarkTurquoise;
+    border: 1px solid DarkTurquoise;
+    position: absolute;
+    left:600px;
+    top:100px;
+}
+
+div.option2:hover {
+    width: 150px;
+    height: 150px;
+    border: 1px solid DarkTurquoise;
+    background-color: DeepPink ;
+}

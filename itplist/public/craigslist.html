@@ -1,0 +1,177 @@
+<body>
+<html>
+<div class="posting">
+
+
+    <div class="title row fields">
+        <label class="posting-title req">
+            <div class="label">posting title</div>
+            <input tabindex="1" type="text"
+                name="PostingTitle"
+                id="PostingTitle"
+                maxlength="70"
+                value="">
+        </label>
+
+        <label class="neighborhood std"><div class="label">specific location</div><input type="text" tabindex="1" name="GeographicArea" id="GeographicArea" size="12" maxlength="40" value=""></label>
+        <label class="postal-code req">
+            <div class="label">postal code</div>
+            <input tabindex="1" id='postal_code' name="postal" size="7" maxlength="15" value="">
+        </label>
+    </div>
+
+    <div class="row fields">
+        <label class="PostingBody req">
+            <div>
+                <small class="onejobonly"><b>Only one job description per posting please.</b><br>Please see our FAQ for job posters<a target="_blank" href="https://www.craigslist.org/about/help/faq-job">&nbsp;[?]</a></small>
+                <span class="label">posting body</span>
+            </div>
+            <textarea class="req"
+                tabindex="1" rows="10" id="PostingBody" name="PostingBody"></textarea>
+        </label>
+    </div>
+
+    <div class="row">
+
+    </div>
+
+    <div class="row fields">
+<fieldset>
+<legend>posting details</legend>
+<div class="attrline"><label class="req select"><div class="label">employment type</div>
+<select tabindex="1" name="employment_type" id="employment_type">
+<option value="">-</option>
+
+    <option value="1">full-time</option>
+    <option value="2">part-time</option>
+    <option value="3">contract</option>
+    <option value="4">employee's choice</option>
+
+</select>
+</label>
+</div><div class="attrline"><label class="std checkbox"><div class="label">direct contact by recruiters is okay</div>
+<input type="checkbox" name="recruiters_ok" id="recruiters_ok" tabindex="1" value="1" />
+</label>
+<label class="std checkbox"><div class="label">internship</div>
+<input type="checkbox" name="is_internship" id="is_internship" tabindex="1" value="1" />
+</label>
+<label class="std checkbox"><div class="label">non-profit organization</div>
+<input type="checkbox" name="is_nonprofit" id="is_nonprofit" tabindex="1" value="1" />
+</label>
+<label class="std checkbox"><div class="label">telecommuting okay?</div>
+<input type="checkbox" name="is_telecommuting" id="is_telecommuting" tabindex="1" value="1" />
+</label>
+</div>
+</fieldset>
+</div>
+
+    <div class="row fields">
+        <label class="req"><span class="label">compensation</span>
+<span id="compdet">please be as detailed as possible</span>
+<input tabindex="1" class="nreq" size="80" id="remuneration" name="remuneration" value="">
+</label>
+
+    </div>
+
+    <fieldset style="margin-bottom: 1.5em;"><legend>contact info</legend>
+        <div class="row fields" style="margin-bottom: 0;">
+            <span>
+                <label class="req" for="FromEMail">
+                    <div class="label">email</div>
+                </label>
+                <input tabindex="1" type="text" class="req df"
+id="FromEMail" name="FromEMail" placeholder="Your email address"
+value="" maxlength="60" autocapitalize="off">
+
+<input tabindex="1" type="text" class="req df"
+id="ConfirmEMail" name="ConfirmEMail" placeholder="Type email address again"
+value="" maxlength="60" autocapitalize="off">
+            </span>
+</span>
+        </div>
+        <br>
+<div class="row fields" style="margin-bottom: 0;">
+<div class="label">users can also contact me:</div>
+<label><input name="contact_phone_ok" id="contact_phone_ok" type="checkbox" tabindex="1" value="1" >by phone</label>
+<label><input name="contact_text_ok" id="contact_text_ok" type="checkbox" tabindex="1" value="1" >by text</label>
+<label class="contact_phone std">
+<div class="label">phone number</div>
+<input type="text" class="std" value="" name="contact_phone" id="contact_phone" size="12" maxlength="16" tabindex="1">
+</label>
+<label class="contact_phone_extension ">
+<div class="label">extension</div>
+<input type="text" class="" value="" name="contact_phone_extension" id="contact_phone_extension" size="6" maxlength="6" tabindex="1" pattern="^[0-9,]+$" title="Please enter a number or leave this field blank">
+</label>
+<label class="std">
+<div class="label">contact name</div>
+<input type="text" value="" name="contact_name" id="contact_name" size="16" maxlength="32" tabindex="1">
+</label>
+</div>
+    </fieldset>
+
+    <div class="row disabled fields js-only" id="mapinfo">
+<fieldset>
+  <legend>
+        <label>
+            <input data-checked="checked" tabindex="1" type="checkbox" name="wantamap" id="wantamap">
+            show on maps
+        </label>
+        <sup>[<a target='_blank' href="https://www.craigslist.org/about/help/show_on_maps">?</a>]</sup>
+  </legend>
+  <div class="street0">
+<label class="std">
+<small class="fieldnote">optional</small>
+<div class="label">street</div>
+<input tabindex="1" id='xstreet0' class="nreq" name="xstreet0" size="20" maxlength="80" value="">
+</label>
+</div>
+
+<div class="street1">
+<label>
+<small class="fieldnote">optional</small>
+<div class="label">cross street</div>
+<input tabindex="1" id='xstreet1' class="nreq" name="xstreet1" size="20" maxlength="80" value="">
+</label>
+</div>
+
+<div class="citystate">
+<label class="std">
+<div class="label">city</div>
+<input tabindex="1" id='city' class="nreq" name="city" size="20" maxlength="80" value=""><strong>,</strong>
+</label>
+<label>
+<div class="label">&nbsp;</div>
+<input tabindex="1" id='region' class="nreq" name="region" size="2" maxlength="2" value="">
+</label>
+</div>
+
+<div class="postal">
+<label>
+<div class="label">postal code</div>
+<input tabindex="1" id='postal_code' class="nreq" name="postal" size="10" maxlength="15" value="">
+</label>
+</div>
+<input type="hidden" name="cl_geocoder_accuracy" value="">
+<input type="hidden" name="draggedpin" value="">
+</fieldset>
+</div>
+
+    <div class="row" id="perms">
+            <label>
+<input tabindex="1" type="checkbox"  name="disability_ok" value="1"
+>
+ok to highlight this job opening for persons with disabilities
+</label>
+
+<a target="_blank" href="https://www.craigslist.org/about/disabilities">[?]</a>
+
+    </div>
+
+    <div class="row" id="copyAssign">
+
+    </div>
+
+    <button tabindex="1" class="bigbutton" type="submit" name="go" value="Continue">continue</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+body {
+    background-color: white;
+}
+
+h1,h2,h3 {
+    color: black;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+h1 {
+  font-size: 40px ;
+  font: Georgia;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: left;
+    font-family:sans-serif;
+}
+
+h3 {
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: left;
+    font-family:sans-serif;
+}
+
+p {
+    color: black;
+    font-size: 17px;
+    font-family:sans-serif;
+    padding-left: 20px;
+}
+
+a.submitlink {
+  margin-left:20px;
+  font-size:16px;
+  font-family: sans-serif;
+}
+
+.contactchecks {
+    color: black;
+    font-size: 17px;
+    font-family:sans-serif;
+    padding-left: 20px;
+}
+
+.button {
+    color: black;
+    background-color: white;
+    border: 2px solid darkcyan; /* Green */
+    font-size: 17px;
+    font-family:sans-serif;
+}
+
+.button:hover {
+    background-color: darkcyan; /* Green */
+    color: white;
+}
+
+.box {
+    border: 2px solid darkcyan ;
+}
+
+.exchange {
+  margin-left: 10px;
+  border: 2px solid midnightblue;
+}
+
+.craigslist {
+  margin-left: 5px;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 450px;
+}
+
+#barterfun, #gigfun, #jobfun {
+    visibility: hidden;
+}
+
+#bartertxt, #gigtxt, #jobtxt {
+    cursor: pointer	;
+}

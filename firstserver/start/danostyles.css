@@ -1,0 +1,65 @@
+body {
+    background-color: BlueViolet;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+a.fresh:link {
+  color: BlueViolet;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.fresh:visited {
+  color: BlueViolet;
+  font-size: 20px;
+  font-family:sans-serif;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.fresh:hover, a.fresh:active {
+  background-color: Lime ;
+  font-size: 150%;
+}
+
+div.option1 {
+    width: 150px;
+    height: 150px;
+    background-color: BlueViolet ;
+    border: 1px solid BlueViolet ;
+    position: absolute;
+    left:50px;
+    top:350px;
+}
+
+div.option1:hover {
+    width: 150px;
+    height: 150px;
+    background-color: Crimson ;
+    border: 1px solid BlueViolet ;
+}
+
+div.option2 {
+    width: 150px;
+    height: 150px;
+    background-color: BlueViolet ;
+    border: 1px solid BlueViolet ;
+    position: absolute;
+    left:750px;
+    top:100px;
+}
+
+div.option2:hover {
+    width: 150px;
+    height: 150px;
+    border: 1px solid BlueViolet ;
+    background-color: DarkOrange   ;
+}

@@ -1,0 +1,65 @@
+body {
+    background-color: MidnightBlue  ;
+}
+
+h1 {
+    color: MidnightBlue  ;
+    text-align: center;
+}
+
+a.fresh:link {
+  color: MidnightBlue  ;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.fresh:visited {
+  color: MidnightBlue  ;
+  font-size: 20px;
+  font-family:sans-serif;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.fresh:hover, a.fresh:active {
+  background-color: Turquoise  ;
+  font-size: 150%;
+}
+
+div.option1 {
+    width: 120px;
+    height: 120px;
+    background-color: MidnightBlue  ;
+    border: 1px solid MidnightBlue  ;
+    position: absolute;
+    bottom:300px;
+    right:40px;
+}
+
+div.option1:hover {
+    width: 120px;
+    height: 120px;
+    background-color: OrangeRed    ;
+    border: 1px solid MidnightBlue ;
+}
+
+div.option2 {
+    width: 120px;
+    height: 120px;
+    background-color: MidnightBlue  ;
+    border: 1px solid MidnightBlue  ;
+    position: absolute;
+    left:200px;
+    top:450px;
+}
+
+div.option2:hover {
+    width: 120px;
+    height: 120px;
+    border: 1px solid MidnightBlue  ;
+    background-color: OliveDrab   ;
+}

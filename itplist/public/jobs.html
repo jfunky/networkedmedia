@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Job posting</title>
+  </head>
+  <body>
+    <form method=POST action="/jobsubmission">
+       <!-- <fieldset> -->
+          <h2>Job</h2>
+          <div class = "box">
+          <p>The position: <input type="text" name="jobname"><br>
+          Description: <textarea name="jobdescription"></textarea><br>
+          Compensation: <input type="text" name="jobpay"><br>
+          Location: <input type="text" name="joblocation"><br>
+          Type:
+          <select tabindex="1" name="job_type" id="job_type">
+          <option value="">-</option>
+
+              <option value="1">full-time</option>
+              <option value="2">part-time</option>
+              <option value="3">contract</option>
+              <option value="4">employee's choice</option>
+
+          </select></p><br>
+        </div>
+        <br>
+       <!-- </fieldset> -->
+       <!-- <fieldset> -->
+          <h2>Contact</h2>
+        <div class="box">
+          <p>Name: <input type="text" name="name"><br>
+          Email: <input type="text" name="email"><br>
+          Phone: <input type="text" name="phone">
+          </p>
+          <div class="contactchecks">
+            <input type="checkbox" name="text_ok" value="1">Text Me
+            <input type="checkbox" name="call_ok" value="1">Call me
+            <input type="checkbox" name="email_ok" value="1">Email me
+          </div>
+          <br>
+        </div>
+
+      <!-- </fieldset> -->
+      <br>
+    <input class="button" type="submit" name="submit" value="submit">
+    </form>
+  </body>
+</html>
