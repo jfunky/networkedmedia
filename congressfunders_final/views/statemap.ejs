@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Congresspeople Fun(d)raising</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+
+		<!-- CSS and Javascript for MAP -->
+		<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+		<script type="text/javascript" src="data/us_states.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="ejs_production.js"></script>
+	</head>
+
+	<body>
+		<h1 id="title">Congresspeople Fun(d)raising</h1>
+		<form>
+			<input type="text" size="30" onkeyup="showResult(this.value)">
+			<div id="livesearch"></div>
+		</form>
+		<embed src="/data/money.mp3"
+        loop="false"
+        autoplay="true"
+        width="0"
+        height="0">
+    </embed>
+		<div class="container">
+			<div id="map"></div>
+			<div id="legis-info">
+					<!-- <h3 div id="stateClicked"> State </h3> -->
+					<div id="senate"></div>
+					<div id="house"></div>
+				<br>
+			</div>
+		</div>
+
+		<div class=container>
+			<div id="source">
+				<p id="sourcetxt"> Sources:
+					<a href="https://www.propublica.org/datastore/api/propublica-congress-api">ProPublica</a>,
+					<a href="http://politicalpartytime.org/">Political Party Time</a>
+					& <a href="https://www.opensecrets.org/">the Center for Responsive Politics</a>
+			</p>
+			</div>
+		</div>
+
+	</body>
+</html>

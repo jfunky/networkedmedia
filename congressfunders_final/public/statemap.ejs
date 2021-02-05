@@ -1,0 +1,38 @@
+
+<% senate.forEach(function(rowOfData) { %>
+
+	<div class="people">
+		<div class="cgname" id="<%=rowOfData.title%>">
+		<b><%= rowOfData.name %></b>, <%= rowOfData.party %> </div>
+		<div class='left'>
+			<div class='money'>$$$</div>
+		</div>
+		<div class='right'>
+			<div class='text'>
+				<a href="<%= rowOfData.web %>">website</a>
+			</div>
+		</div>
+		<br>
+	</div>
+	<br>
+
+<% }) %>
+
+<% house.forEach(function(rowOfData) { %>
+
+	<div class="people">
+		<div class="cgname" id="<%=rowOfData.title%>">
+		<b><%= rowOfData.name %></b>, <%= rowOfData.party %> </div>
+		<div class='left'>
+			<div class='money'>$$$</div>
+		</div>
+		<div class='right'>
+			<div class='text'>
+				<a href="<%= rowOfData.web %>">website</a>
+			</div>
+		</div>
+		<br>
+	</div>
+	<br>
+
+<% }) %>

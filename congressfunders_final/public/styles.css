@@ -1,0 +1,282 @@
+h1 {
+  padding-left: 20px;
+  padding-bottom:40px;
+  font-family: 'Lora 13px', serif;
+  font-size : 22px ;
+	text-align: center;
+}
+/*
+h2 {
+  font-size : 20px ;
+	text-align: left ;
+  padding-left: 70px;
+}*/
+
+h4 {
+  font-family: 'Lora 13px', serif;
+  font-size : 18px ;
+	text-align: center;
+  color: white;
+  margin: 0;
+  padding-top: 12px;
+  padding-bottom: 5px;
+  border: 0;
+  /*top: 30%;
+  left: 50%;*/
+}
+
+input[type=text] {
+    width: 230px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 100px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-left: 40px ;
+}
+
+input[type=text]:focus {
+    width: 51%;
+}
+
+.container {
+	display: block ;
+}
+
+ #map {
+  position: relative;
+	float: left;
+	left: 40px;
+	border-style: solid ;
+	border-width: 2px;
+	border-color: #4a1486;
+  /*width: 60%;
+	height: 60%;*/
+	width: 720px ;
+	height: 410px ;
+}
+
+#legis-info {
+	position: relative;
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	margin-left: 100px;
+	text-align: justify ;
+	width: 280px;
+	max-height: 480px ;
+	overflow: scroll;
+  display: inline-block;
+}
+
+#party-info {
+	position: absolute;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	margin-left: 40px;
+	text-align: justify ;
+	width: 400px;
+	max-height: 500px ;
+	overflow: scroll;
+  display: inline-block;
+  color: black ;
+  z-index: 200;
+}
+
+
+#source {
+ position: relative;
+ float: left;
+ margin: 60px;
+ width: 960px;
+ height: 40px;
+ text-align: justify;
+}
+
+#issue-areas {
+	position: relative;
+	float: left;
+	margin-top: 0px;
+	margin-left: 60px;
+	width: 400px;
+	max-height: 480px ;
+  display: inline-block;
+}
+
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 80px;
+    font-weight: bold ;
+    cursor: pointer;
+}
+
+.topright:hover {
+    color:red;
+}
+
+.issues {
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #034e7b;
+    /*padding: 25px;
+    margin: 10px;*/
+    width: 180px;
+    height: 65px;
+    margin: 5px ;
+    border-style: solid ;
+  	border-width: 2px;
+  	border-color: #ece7f2;
+    display: inline-block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    text-align:center ;
+}
+
+.issues:hover {
+    opacity: .6;
+}
+/*
+.issues:hover .sub {
+    display:list-item ;
+}*/
+
+.sub {
+    display:none ;
+}
+
+
+.people {
+    position: relative;
+    display: inline-block;
+}
+
+.cgname {
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 20px;
+    background: #ece7f2;
+    padding: 20px;
+    margin: 5px;
+    width: 200px;
+    height: 20px;
+    border-style: solid ;
+  	border-width: 2px;
+  	border-color: #034e7b;
+    display: inline-block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.right {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 71%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.left {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 29%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.people:hover .cgname  {
+  opacity: 0.3;
+}
+
+.people:hover .right {
+  opacity: 1;
+}
+
+.people:hover .left {
+  opacity: 1;
+}
+
+.text {
+  background-color: #034e7b;
+  color: white;
+  font-size: 14px;
+  padding: 12px 26px;
+}
+
+.money {
+  background-color: inherit;
+  color: #034e7b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a {
+  color: inherit ;
+}
+
+div.fadeMe {
+  opacity:    0.2;
+  background: #000;
+  width:      100%;
+  height:     100%;
+  z-index:    10;
+  top:        0;
+  left:       0;
+  position:   fixed;
+}
+
+.legend {
+    line-height: 20px;
+    color: #555;
+    font-family: 'Lora', serif;
+}
+.legend i {
+    width: 20px;
+    height: 20px;
+    font-family: 'Lora', serif;
+    float: left;
+    margin-right: 20px;
+    opacity: 0.7;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 16px/18px ;
+    font-family: 'Lora', serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.bar{
+  fill: steelblue;
+  z-index: 201;
+}
+
+.bar:hover{
+  fill: brown;
+  z-index: 202;
+}
+
+.axis {
+  font: 12px sans-serif;
+  z-index: 203;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+  z-index: 204;
+}

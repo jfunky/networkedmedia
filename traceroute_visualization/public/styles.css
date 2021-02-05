@@ -1,0 +1,116 @@
+body {
+    background-color: white;
+}
+
+h1,h2,h3,h4 {
+    color: black;
+    text-align: center;
+}
+
+h1 {
+  font-size: 36px ;
+  font: Georgia;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: left;
+    font-family:sans-serif;
+}
+
+h3,h4 {
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: left;
+    font-family:sans-serif;
+}
+
+img {
+    border: 5px ;
+    border-radius: 5px;
+    align: center;
+    cursor: pointer	;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#nycmap {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#bed {
+  position: absolute;
+  background-color:"#B10DC9";
+  top: 440px;
+  left: 470px;
+  width: 120px;
+  height: 120px;
+}
+
+#beers {
+  position: absolute;
+  background-color:"#B10DC9";
+  top: 110px;
+  left: 490px;
+  width: 120px;
+  height: 120px;
+}
+
+#nyu {
+  position: absolute;
+  top: 130px;
+  left: 360px;
+  width: 75px;
+  height: 75px;
+}
+
+#qtrain {
+  position: absolute;
+  top: 330px;
+  left: 430px;
+  width: 75px;
+  height: 75px;
+}
+
+.links {
+    width: 220px;
+    height: 205px;
+    background-color: black;
+    border: 1px solid black;
+    position: absolute;
+    display:none;
+    padding: 5px;
+    font-family:monospace;
+    color: LightGray;
+    font-size: large ;
+}
+
+a {
+  font-family:monospace;
+  font-size:large;
+  color:Lime;
+}
+
+#bedSites {
+  left:680px;
+  top:350px;
+}
+
+#beerSites {
+  left:630px;
+  top:90px;
+}
+
+#nyuSites{
+  left:70px;
+  top:60px;
+}
+
+#trainSites{
+  left:130px;
+  top:320px;
+}

@@ -1,0 +1,118 @@
+<html>
+	<head>
+    <link rel="stylesheet" type="text/css" href="960_12_col.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+				// document.getElementsbyClass
+				// .target!!
+
+			var colors = ["magenta", "papayawhip", "white", "steelblue",
+		"lightcoral", "lemonchiffon", "lightgrey", "gold", "azure", "chartreuse"]
+
+      function init() {
+				nycmap.addEventListener('click', bgChange);
+				bed.addEventListener('click', bedBox);
+				beers.addEventListener('click', beersBox);
+				nyu.addEventListener('click', nyuBox);
+				qtrain.addEventListener('click', qTrainBox);
+      }
+
+
+			function bgChange() {
+					var randomIndex = Math.random() * colors.length;
+					randomIndex = Math.floor(randomIndex);
+	        document.body.style.backgroundColor = colors[randomIndex];
+					//console.log(colors[randomIndex]);
+					console.log(document.body.style.backgroundColor);
+	     }
+
+					function bedBox() {
+						var x = document.getElementById('bedSites');
+  			     if (x.style.display === 'none') {
+  			         x.style.display = 'block';
+  			     } else {
+  			         x.style.display = 'none';
+  			     }
+ 					}
+
+					function beersBox() {
+ 					 var x = document.getElementById('beerSites');
+ 			     if (x.style.display === 'none') {
+ 			         x.style.display = 'block';
+ 			     } else {
+ 			         x.style.display = 'none';
+ 			     }
+ 					}
+
+					function nyuBox() {
+ 					 var x = document.getElementById('nyuSites');
+ 			     if (x.style.display === 'none') {
+ 			         x.style.display = 'block';
+ 			     } else {
+ 			         x.style.display = 'none';
+ 			     }
+ 					}
+
+ 					function qTrainBox() {
+ 						var x = document.getElementById('trainSites');
+ 				    if (x.style.display === 'none') {
+ 				        x.style.display = 'block';
+ 				    } else {
+ 				        x.style.display = 'none';
+ 				   	}
+ 					 }
+
+      window.addEventListener('load', init);
+
+    </script>
+
+		<title>Website navigation detours</title>
+	</head>
+	<body>
+
+  <div class="container_12 clearfix">
+    <div class="grid_12"><h1>Website navigation detours</h1></div>
+  </div>
+
+  <div class="container_12 clearfix">
+		<div class="parent">
+			<!-- <img class="grid_12" id="nycmap" src="https://s3.amazonaws.com/images.m2i.stamen.com/20170925/watercolor_zPPQWoxLnwc.jpeg"> -->
+			<img class="grid_12" id="nycmap" src="https://s3.amazonaws.com/images.m2i.stamen.com/20170926/watercolor_c3BXozvj0f0.jpeg">
+			<img class="icon" id="bed" src="noun_1129273_cc.png">
+			<img class="icon" id="beers" src="noun_1134343_cc.png">
+			<img class="icon" id="nyu" src="https://blog.trymyui.com/wp-content/uploads/2015/09/NYU.jpg">
+			<img class="icon" id="qtrain" src="http://images.huffingtonpost.com/2015-11-05-1446690413-9531066-Q_Train_logo.png">
+			<div class="links" id="bedSites">
+				traceroute<br>
+				<a href="https://www.gtt.net/">cia.gov</a><br>
+				<a href="https://encrypted.google.com/maps/@47.6344018,-122.3422701,3a,60y,186.25h,87.75t/data=!3m6!1e1!3m4!1sGotkPzNPOZkffo1BwoAsEw!2e0!7i13312!8i6656?hl=en">duckduckgo.com</a>
+				<a href="https://encrypted.google.com/maps/@53.3470598,-6.2412965,3a,75y,188h,84.89t/data=!3m8!1e1!3m6!1sAF1QipMLkcqPz1d9YJK5gmALCF6LyQqaoqqYzzxdlJue!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMLkcqPz1d9YJK5gmALCF6LyQqaoqqYzzxdlJue%3Dw203-h100-k-no-pi0.89600736-ya269.5457-ro0.5071202-fo100!7i8000!8i4000?hl=en">facebook.com</a>
+				<a href="infinity.html">nytimes.com</a><br>
+				<a href="https://www.hosteurope.de/en/">nsa.gov</a><br>
+				<a href="http://www.hgc.com.hk/Home/Index-en.html">twitter.com</a>
+			</div>
+			<div class="links" id="beerSites">
+				traceroute<br>
+				<a href="https://encrypted.google.com/maps/@47.6854095,-122.2873918,3a,60y,180.3h,102.2t/data=!3m6!1e1!3m4!1s46HxbqRBzsaKlAvGTRF7VQ!2e0!7i13312!8i6656?hl=en">encrypted.google.com</a>
+				<a href="https://encrypted.google.com/maps/@30.2629547,-97.7477798,3a,75y,292.89h,101.39t/data=!3m8!1e1!3m6!1sAF1QipPJz4rahMh7xayddUJYEQp7ZZdjsfB6mlmAzuEa!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPJz4rahMh7xayddUJYEQp7ZZdjsfB6mlmAzuEa%3Dw203-h100-k-no-pi-0-ya109.67591-ro-0-fo100!7i7680!8i3840?hl=en">duckduckgo.com</a>
+				<a href="https://automattic.com/">hackaday.com</a>
+				<a href="https://encrypted.google.com/maps/@33.7873062,-118.2979799,3a,75y,127.09h,91.47t/data=!3m8!1e1!3m6!1sAF1QipPeS-3MvufwwIElfKIBeL-Qk4qTej2EZ3ch2kzM!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPeS-3MvufwwIElfKIBeL-Qk4qTej2EZ3ch2kzM%3Dw203-h100-k-no-pi-0-ya244.7963-ro-0-fo100!7i13312!8i6656?hl=en">healthcare.gov</a>
+			</div>
+			<div class="links" id="nyuSites">
+				traceroute<br>
+				<a href="https://encrypted.google.com/maps/@39.9000651,-105.2228933,6861a,35y,38.11t/data=!3m1!1e3?hl=en">basicanalogcircuits.com</a>
+				<a href="https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=98162">buzzfeed.com</a>
+				<a href="https://en.wikipedia.org/wiki/Internet2">duckduckgo.com</a>
+				<a href="https://encrypted.google.com/maps/@47.010031,7.9854737,3a,75y,5.41h,81.04t/data=!3m8!1e1!3m6!1sAF1QipOe2i_heGfvNeV8lb9A0fxdz90E-4NdeI3AwzPK!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOe2i_heGfvNeV8lb9A0fxdz90E-4NdeI3AwzPK%3Dw203-h100-k-no-pi-2.9338646-ya35.499996-ro-0-fo100!7i9728!8i4864?hl=en">wikipedia.com</a>
+			</div>
+			<div class="links" id="trainSites">
+				traceroute<br>
+				<a href="https://encrypted.google.com/maps/@40.7139963,-74.3687765,3a,60y,172.12h,130.71t/data=!3m6!1e1!3m4!1spKHBWsH1ZH0ToCNwoSmcDg!2e0!7i13312!8i6656?hl=en">qz.com</a><br>
+				<a href="https://www.fastly.com/">yelp.com</a>
+			</div>
+		</div>
+  </div>
+    <!-- clear div -->
+		<!-- Bed by Surya from the Noun Project -->
+	</body>
+</html>

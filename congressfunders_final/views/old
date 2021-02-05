@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Congresspeople Fun(d)raising</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+	<link rel="stylesheet" type="text/css" href="960_12_col.css" />
+	<link rel="stylesheet" href="styles.css" />
+<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'></head>
+<body>
+	<div class="container_12 clearfix">
+		<h1 class="grid_12" id="title">Congresspeople Fun(d)raising</h1>
+	</div>
+	<div class="container_12 clearfix">
+		<div class="grid_9" id="map"></div>
+		<div class="grid_3" id="info">
+				<p>
+						Senator:<br>
+						Representative: <br>
+					<p>
+			<br>
+		</div>
+	</div>
+  <div class="container_12 clearfix">
+		<div class="grid_12">
+			<p id="sourcetxt"> Source:</p>
+			<a id="source" href="http://politicalpartytime.org/">Political Party Time</a>
+		</div>
+	</div>
+	<!-- CSS and Javascript for MAP -->
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="data/us_states.js"></script>
+	<script type="text/javascript">
+
+		// Setting up the map (code that we're used to)
+		var map = L.map('map').setView([37.8, -96], 4);
+		L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+			maxZoom: 18,
+			minZoom: 4,
+			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+				'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+		}).addTo(map);
+
+		//spacial feature styling
+		function style(feature) {
+			return {
+				weight: .9,
+				opacity: .70,
+				color: 'white',
+				fillOpacity: .70,
+				fillColor: "#361CB2"
+			};
+		}
+
+		//highlight function for hover
+		function highlightFeature(e) {
+			// console.log("logging e");
+			//console.log(e);
+			var layer = e.target;
+			// console.log("logging e.target");
+			//console.log(e.target);
+			layer.setStyle({
+				weight: 3,
+				color: "#00133D",
+				//dashArray: '3',
+				fillOpacity: .95
+			});
+			// This is where data changes dependent on the state
+			info.update(layer.feature.properties);
+		}
+
+		function resetHighlight(e) {
+			geojson.resetStyle(e.target);
+		}
+
+
+		// redirect function for click
+		function redirect(e) {
+				var layer = e.target;
+				console.log(e);
+				console.log("layer.feature")
+				console.log(layer.feature.properties.name);
+				// window.location = "/";
+		}
+
+		// apply functions to user actions
+		function onEachFeature(feature, layer) {
+			layer.on({
+				mouseover: highlightFeature, //on mouseover, call this function
+				mouseout: resetHighlight, // on mouseout, call this function
+				click: redirect,
+			});
+		}
+
+		var geojson = L.geoJson(stateData, {
+			style: style,
+			onEachFeature: onEachFeature
+		}).addTo(map);
+
+		var info = L.control();
+
+		// add info
+		info.onAdd = function (map) {
+		    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+		    this.update();
+		    return this._div;
+		};
+
+		// method that we will use to update the control based on feature properties passed
+		info.update = function (props) {
+		    this._div.innerHTML = '<h4>Congresspeople by state</h4>' +  (props ?
+		        '<b>' + props.name + '</b><br />' + props.full_name + '</sup>'
+		        : 'Hover over a state');
+		};
+
+		info.addTo(map);
+
+		// function stuffToRezie(){
+		//         var h_window = $(window).height();
+		//         var h_map = h_window * (.8);
+		// 				var w_window = $(window).width();
+		// 				var w_map = w_window * (.8);
+		//         $('#map').css('height', h_map);
+		//         $('#map').css('width', w_map);
+		// }
+		//
+		// $(window).on("resize", stuffToRezie).trigger('resize');
+
+	</script>
+</body>
+</html>
